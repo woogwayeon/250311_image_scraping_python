@@ -21,19 +21,19 @@ from pathlib import Path
 
 def download_images(keyword, num_images, file_name):
 
-		# 이미지를 저장할 폴더 이름
+    # 이미지를 저장할 폴더 이름
     output_directory = "can" 
     
     # 이미지 다운로드
     downloader.download(keyword, limit=num_images, output_dir=output_directory, adult_filter_off=True, force_replace=False, timeout=60)
 
-		# 이미지 저장 폴더의 경로
+    # 이미지 저장 폴더의 경로
     root = Path().cwd() / output_directory 
 
-		# 폴더 내 모든 파일 가져오기
+    # 폴더 내 모든 파일 가져오기
     downloaded_files = list(root.glob("*.*")) 
 
-		# 다운로드된 각 파일에 대해 반복
+    # 다운로드된 각 파일에 대해 반복
     for i, file in enumerate(downloaded_files): 
 
         extension = file.suffix # 파일 확장자
