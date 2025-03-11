@@ -97,7 +97,6 @@ compress_folder(folder_path, output_path)
 
 그냥 다운로드는 안돼서.. 파일 압축해서 다운해야한다!
 
-![image.png](attachment:da0b464d-b643-4c52-a52c-83025fea2c9d:image.png)
 
 이렇게 zip을 해줘야 다운로드 가능
 
