@@ -25,8 +25,7 @@ def download_images(keyword, num_images, file_name):
     output_directory = "can" 
     
     # 이미지 다운로드
-    downloader.download(keyword, limit=num_images, output_dir=output_directory, 
-											    adult_filter_off=True, force_replace=False, timeout=60)
+    downloader.download(keyword, limit=num_images, output_dir=output_directory, adult_filter_off=True, force_replace=False, timeout=60)
 
 		# 이미지 저장 폴더의 경로
     root = Path().cwd() / output_directory 
